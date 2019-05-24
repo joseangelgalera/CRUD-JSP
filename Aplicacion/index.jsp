@@ -24,6 +24,14 @@
     </head>
 
     <body>
+        
+        <%
+          session = request.getSession(false);
+          if (session.getAttribute("CodUSu") == null) {
+            response.sendRedirect("iniciosesion.jsp");
+          }
+
+        %>
 
         <div class="container h-100">
 
@@ -53,11 +61,10 @@
                           }
                           sesion.setAttribute("usuario", usuario);
                           sesion.setAttribute("contrasena", contrasena);
-                          String query = "SELECT * FROM usuario";
+                          String query = "SELECT * FROM usuarios";
                           MessageDigest md = MessageDigest.getInstance("MD5");
                           md.update(contrasena.getBytes());
                           String hash = DatatypeConverter.printHexBinary(md.digest());
-
                           ResultSet lista = s.executeQuery(query);
                           while (lista.next()) {
                             usuarioBD = lista.getString("NomUsu");

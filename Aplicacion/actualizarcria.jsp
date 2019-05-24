@@ -21,7 +21,7 @@
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/cria", "root", "");
           Statement s = conexion.createStatement();
-          String actualizacion = "UPDATE nido SET NumAnill='";
+          String actualizacion = "UPDATE crias SET NumAnill='";
           actualizacion += request.getParameter("NumAnill");
           actualizacion += "', Color='";
           actualizacion += request.getParameter("Color");

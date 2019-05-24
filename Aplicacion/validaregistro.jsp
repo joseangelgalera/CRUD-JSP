@@ -33,7 +33,7 @@
           MessageDigest md = MessageDigest.getInstance("MD5");
           md.update(request.getParameter("PassUsu").getBytes());
           String hash = DatatypeConverter.printHexBinary(md.digest());
-          String insercion = "INSERT INTO usuario (NomUsu, PassUsu) ";
+          String insercion = "INSERT INTO usuarios (NomUsu, PassUsu) ";
           insercion += "VALUES ('";
           insercion += request.getParameter("NomUsu") + "', '";
           insercion += hash + "')";

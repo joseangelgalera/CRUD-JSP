@@ -22,7 +22,7 @@
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/cria", "root", "");
           Statement s = conexion.createStatement();
-          String borrado = "DELETE FROM nido WHERE CodNid=";
+          String borrado = "DELETE FROM crias WHERE CodNid=";
           borrado += request.getParameter("borrarCria");
           s.execute(borrado);
           conexion.close();

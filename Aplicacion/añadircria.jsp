@@ -21,7 +21,7 @@
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/cria", "root", "");
           Statement s = conexion.createStatement();
-          String insercion = "INSERT INTO nido (NumAnill, Color, Sexo, Nac, Murio, Apartado, Vendido, NumAnillPad) ";
+          String insercion = "INSERT INTO crias (NumAnill, Color, Sexo, Nac, Murio, Apartado, Vendido, NumAnillPad) ";
           insercion += "VALUES ('";
           insercion += request.getParameter("NumAnill") + "', '";
           insercion += request.getParameter("Color") + "', '";

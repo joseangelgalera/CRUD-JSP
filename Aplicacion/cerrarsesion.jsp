@@ -15,6 +15,13 @@
 
     <body>
         <%
+          session = request.getSession(false);
+          if (session.getAttribute("CodUSu") == null) {
+            response.sendRedirect("iniciosesion.jsp");
+          }
+
+        %>
+        <%
           session.invalidate();
         %>
         <script>
