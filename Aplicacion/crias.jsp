@@ -44,22 +44,26 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
+       
+ 
+          
 
-        <%
-          session = request.getSession(false);
-          if (session.getAttribute("CodUSu") == null) {
-            response.sendRedirect("iniciosesion.jsp");
-          }
-
-        %>
-
-        <%          request.setCharacterEncoding("UTF-8");
+        <%request.setCharacterEncoding("UTF-8");
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/cria", "root", "");
           Statement s = conexion.createStatement();
           ResultSet listado = s.executeQuery("SELECT * FROM crias");
+          Statement s2 = conexion.createStatement();
+          ResultSet listadoPadre = s2.executeQuery("SELECT * FROM padres ");
+          Statement s3 = conexion.createStatement();
+          ResultSet listadoPadreAnadir = s3.executeQuery("SELECT * FROM padres ");
           HttpSession sesion = request.getSession();
+          if (sesion.getAttribute("usuario") == null) {
+            response.sendRedirect("iniciosesion.jsp");
+          }
+          
         %>
+         
 
         <div class="container">
             <div class="table-wrapper">
@@ -70,6 +74,66 @@
                         </div>
                         <div class="col-sm-6">
                             <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="fas fa-plus-circle"></i><span>Añadir cria</span></a>						
+                        </div>
+                    </div>
+                    <!--Añadir Cria-->
+                    <div id="addEmployeeModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form action="anadircria.jsp" method="post">
+                                    <div class="modal-header">						
+                                        <h4 class="modal-title">Añadir cria</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">					
+                                        <div class="form-group">
+                                            <label>Nº Anilla</label>
+                                            <input type="text" class="form-control" name="NumAnill" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Color</label>
+                                            <input type="text" class="form-control" name="Color" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Sexo</label>
+                                            <input type="text" class="form-control" name="Sexo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nacio</label>
+                                            <input type="text" class="form-control" name="Nac" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Murio</label>
+                                            <input type="text" class="form-control" name="Murio" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Apartado</label>
+                                            <input type="text" class="form-control" name="Apartado" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Vendido</label>
+                                            <input type="text" class="form-control" name="Vendido" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nº Anilla de los padres</label>
+                                            <select name="NumAnillPad">
+                                                <%
+                                                  while (listadoPadreAnadir.next()) {
+                                                %>
+                                                <option value="<%=listadoPadreAnadir.getString("NumAnillPad")%>"><%=listadoPadreAnadir.getString("NumAnillPad")%>
+                                                </option>
+                                                <%
+                                                  }
+                                                %>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                        <input type="submit" class="btn btn-success" value="Añadir">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +210,16 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Nº Anilla de los padres</label>
-                                                        <input type="text" class="form-control" name="NumAnillPad" placeholder="<%= listado.getString("NumAnillPad")%>" required>
+                                                        <select name="NumAnillPad">
+                                                            <%
+                                                              while (listadoPadre.next()) {
+                                                            %>
+                                                            <option value="<%=listadoPadre.getString("NumAnillPad")%>"><%=listadoPadre.getString("NumAnillPad")%>
+                                                            </option>
+                                                            <%
+                                                              }
+                                                            %>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
@@ -193,67 +266,17 @@
             </div>
         </div>
 
-        <!--Añadir Cria-->
-        <div id="addEmployeeModal" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <form action="añadircria.jsp" method="post">
-                        <div class="modal-header">						
-                            <h4 class="modal-title">Añadir cria</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">					
-                            <div class="form-group">
-                                <label>Nº Anilla</label>
-                                <input type="text" class="form-control" name="NumAnill" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Color</label>
-                                <input type="text" class="form-control" name="Color" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Sexo</label>
-                                <input type="text" class="form-control" name="Sexo">
-                            </div>
-                            <div class="form-group">
-                                <label>Nacio</label>
-                                <input type="text" class="form-control" name="Nac" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Murio</label>
-                                <input type="text" class="form-control" name="Murio" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Apartado</label>
-                                <input type="text" class="form-control" name="Apartado" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Vendido</label>
-                                <input type="text" class="form-control" name="Vendido" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Nº Anilla de los padres</label>
-                                <input type="text" class="form-control" name="NumAnillPad" required>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-                            <input type="submit" class="btn btn-success" value="Añadir">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
 
         <!--Volver al índice-->
-        <form action="index.jsp" method="post">
+        <form action="cerrarsesion.jsp" method="post">
             <div class="col-11">
                 <div class="col-xs-6">
                 </div>
                 <div class="col-xs-2">
                     <input type = "hidden" name = "usuario" value = "<%sesion.getAttribute("usuario");%>" />
                     <input type = "hidden" name = "contrasena" value = "<%sesion.getAttribute("contrasena");%>" />
-                    <input type="submit" class="btn-danger btn-lg" value="Volver"> 
+                    <input type="submit" class="btn-danger btn-lg" value="Cerrar sesion"> 
                 </div>
             </div>
         </form>

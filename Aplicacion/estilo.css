@@ -6,6 +6,12 @@ html {
     height: 100%;
     background-image: url("img/background.jpg");
 }
+.form-group{
+    color: #000
+}
+.modal-title{
+    color:#000
+}
 .table-wrapper {
     background: #fff;
     padding: 20px 25px;

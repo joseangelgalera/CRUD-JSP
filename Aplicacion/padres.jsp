@@ -45,13 +45,7 @@
     </head>
     <body>
         
-        <%
-          session = request.getSession(false);
-          if (session.getAttribute("CodUSu") == null) {
-            response.sendRedirect("iniciosesion.jsp");
-          }
 
-        %>
 
         <%
           request.setCharacterEncoding("UTF-8");
@@ -60,6 +54,9 @@
           Statement s = conexion.createStatement();
           ResultSet listado = s.executeQuery("SELECT * FROM padres");
           HttpSession sesion = request.getSession();
+          if (sesion.getAttribute("usuario") == null) {
+            response.sendRedirect("iniciosesion.jsp");
+          }
         %>
 
         <div class="container">
@@ -168,7 +165,7 @@
         <div id="addEmployeeModal" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form action="añadirpadres.jsp" method="post">
+                    <form action="anadirpadres.jsp" method="post">
                         <div class="modal-header">						
                             <h4 class="modal-title">Añadir padres</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -197,14 +194,14 @@
         </div>
 
         <!--Volver al índice-->
-        <form action="index.jsp" method="post">
+        <form action="cerrarsesion.jsp" method="post">
             <div class="col-11">
                 <div class="col-xs-6">
                 </div>
                 <div class="col-xs-2">
                     <input type = "hidden" name = "usuario" value = "<%sesion.getAttribute("usuario");%>" />
                     <input type = "hidden" name = "contrasena" value = "<%sesion.getAttribute("contrasena");%>" />
-                    <input type="submit" class="btn-danger btn-lg" value="Volver"> 
+                    <input type="submit" class="btn-danger btn-lg" value="Cerrar sesion"> 
                 </div>
             </div>
         </form>

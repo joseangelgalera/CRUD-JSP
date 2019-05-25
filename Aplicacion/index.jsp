@@ -25,13 +25,6 @@
 
     <body>
         
-        <%
-          session = request.getSession(false);
-          if (session.getAttribute("CodUSu") == null) {
-            response.sendRedirect("iniciosesion.jsp");
-          }
-
-        %>
 
         <div class="container h-100">
 
