@@ -23,5 +23,6 @@ En caso de que se introduzcan mal los datos se puede volver a intentar o volver 
 *validaregistro.jsp*
 <img src="Capturas/img3.png" alt="Fallo de registro">
 En caso de que se haga correctamente el registro se presentara un mensaje y se podra volver a la página de incio de sesión.
+*validaregistro.jsp*
 <img src="Capturas/img4.png" alt="Registro completado correctamente">
 
