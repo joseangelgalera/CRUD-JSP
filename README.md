@@ -11,13 +11,16 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 
 ## Página principal
 En ella podemos ver el botón de inicio de sesión y un link para iniciar el registro de un nuevo usuario.
+*index.jsp*
 <img src="Capturas/img1.png" alt="Inicio">
 <br>
 
-## Inicio de sesión
+## Registro de nuevo usuario
 Consta de un formulario que pide nombre de usuario, contraseña y repetir dicha contraseña.
+*registro.jsp*
 <img src="Capturas/img2.png" alt="Registro">
 En caso de que se introduzcan mal los datos se puede volver a intentar o volver a la pagina de inicio de sesión.
+*validaregistro.jsp*
 <img src="Capturas/img3.png" alt="Fallo de registro">
 <br>
 
