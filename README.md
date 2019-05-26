@@ -10,7 +10,7 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 <br>
 
 ## Página principal
-En ella podemos ver el botón de inicio de sesión y un link para iniciar el registro de un nuevo usuario.<br>
+En ella podemos ver el botón de inicio de sesión y un link para iniciar el registro de un nuevo usuario.
 *index.jsp*
 <img src="Capturas/img1.png" alt="Inicio">
 <br>
