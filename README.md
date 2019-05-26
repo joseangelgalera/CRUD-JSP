@@ -43,7 +43,10 @@ Cualquier intento de acceder a las tablas sin haber iniciado sesión anteriormen
 En ella se guarda: el numero de anilla de los padres, el año de nacimiento y la raza.<br>
 *padres.jsp*
 <img src="Capturas/img8.png" alt="Tabla padres">
-
+<br>
+### Añadir padres
+<img src="Capturas/img9.png" alt="Añadir padres">
+<img src="Capturas/img10.png" alt="Nuevos padres añadidos">
 
 
 
