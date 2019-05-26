@@ -7,3 +7,17 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 
 ## Base de datos utilizada:
 <img src="Capturas/basededatos.png" alt="Base de datos">
+<br>
+
+## Página principal
+En ella podemos ver el botón de inicio de sesión y un link para iniciar el registro de un nuevo usuario.
+<img src="Capturas/img1.png" alt="Inicio">
+<br>
+
+## Inicio de sesión
+Consta de un formulario que pide nombre de usuario, contraseña y repetir dicha contraseña.
+<img src="Capturas/img2.png" alt="Registro">
+En caso de que se introduzcan mal los datos se puede volver a intentar o volver a la pagina de inicio de sesión.
+<img src="Capturas/img3.png" alt="Fallo de registro">
+<br>
+
