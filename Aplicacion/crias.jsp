@@ -4,6 +4,8 @@
     Author     : José Ángel
 --%>
 
+<%@page import="javax.xml.bind.DatatypeConverter"%>
+<%@page import="java.security.MessageDigest"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
@@ -44,9 +46,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
-       
- 
-          
+
+
+
 
         <%request.setCharacterEncoding("UTF-8");
           Class.forName("com.mysql.jdbc.Driver");
@@ -61,9 +63,9 @@
           if (sesion.getAttribute("usuario") == null) {
             response.sendRedirect("iniciosesion.jsp");
           }
-          
+
         %>
-         
+
 
         <div class="container">
             <div class="table-wrapper">
@@ -269,14 +271,14 @@
 
 
         <!--Volver al índice-->
-        <form action="cerrarsesion.jsp" method="post">
+        <form action="index.jsp" method="post">
             <div class="col-11">
                 <div class="col-xs-6">
                 </div>
                 <div class="col-xs-2">
-                    <input type = "hidden" name = "usuario" value = "<%sesion.getAttribute("usuario");%>" />
-                    <input type = "hidden" name = "contrasena" value = "<%sesion.getAttribute("contrasena");%>" />
-                    <input type="submit" class="btn-danger btn-lg" value="Cerrar sesion"> 
+                    <input type = "hidden" name = "usuario" value = "<%out.print(sesion.getAttribute("usuario")); %>" />
+                    <input class="oculto" type = "password" name = "contrasena" value = "<%out.print(sesion.getAttribute("contrasena"));%>" />
+                    <input type="submit" class="btn-danger btn-lg" value="Volver"> 
                 </div>
             </div>
         </form>

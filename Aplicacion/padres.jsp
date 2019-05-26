@@ -194,14 +194,15 @@
         </div>
 
         <!--Volver al índice-->
-        <form action="cerrarsesion.jsp" method="post">
+        <!--Volver al índice-->
+        <form action="index.jsp" method="post">
             <div class="col-11">
                 <div class="col-xs-6">
                 </div>
                 <div class="col-xs-2">
-                    <input type = "hidden" name = "usuario" value = "<%sesion.getAttribute("usuario");%>" />
-                    <input type = "hidden" name = "contrasena" value = "<%sesion.getAttribute("contrasena");%>" />
-                    <input type="submit" class="btn-danger btn-lg" value="Cerrar sesion"> 
+                    <input type = "hidden" name = "usuario" value = "<%out.print(sesion.getAttribute("usuario")); %>" />
+                    <input class="oculto" type = "password" name = "contrasena" value = "<%out.print(sesion.getAttribute("contrasena"));%>" />
+                    <input type="submit" class="btn-danger btn-lg" value="Volver"> 
                 </div>
             </div>
         </form>

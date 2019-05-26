@@ -1,5 +1,5 @@
 body,
-    
+
 html {
     margin: 0;
     padding: 0;
@@ -228,4 +228,7 @@ table.table .avatar {
 
 .table-title{
     background: #f39c12;
+}
+.oculto{
+    visibility: hidden;
 }

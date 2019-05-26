@@ -57,7 +57,7 @@
                         </div>
 
 
-                        <form action="index.jsp"  method="post">
+                        <form action="iniciosesion.jsp"  method="post">
                             <input type = "hidden" name = "usuario" value = "<%sesion.getAttribute("usuario");%>" />
                             <input type = "hidden" name = "contrasena" value = "<%sesion.getAttribute("contraseña");%>" />
                             <div class="d-flex justify-content-center mt-3 login_container">
@@ -87,7 +87,7 @@
                             <h4 class="text-center">Las contraseñas no coinciden</h4>
                         </div>
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="button" name="button" class="btn login_btn"><a href="registro.jsp" class="login">Volver a intentarlo</a></button>
+                            <button type="button" name="button" class="btn login_btn"><a href="registro.jsp" class="link">Volver a intentarlo</a></button>
                         </div>
 
                         <form action="index.jsp"  method="post">

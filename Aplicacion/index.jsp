@@ -24,8 +24,6 @@
     </head>
 
     <body>
-        
-
         <div class="container h-100">
 
             <div class="d-flex justify-content-center h-100">
@@ -48,69 +46,66 @@
                           String contrasena = "";
                           String usuarioBD = "";
                           String contrasenaBD = "";
-                          if (!sesion.isNew()) {
-                            usuario = request.getParameter("usuario");
-                            contrasena = request.getParameter("contrasena");
-                          }
-                          sesion.setAttribute("usuario", usuario);
-                          sesion.setAttribute("contrasena", contrasena);
-                          String query = "SELECT * FROM usuarios";
-                          MessageDigest md = MessageDigest.getInstance("MD5");
-                          md.update(contrasena.getBytes());
-                          String hash = DatatypeConverter.printHexBinary(md.digest());
-                          ResultSet lista = s.executeQuery(query);
-                          while (lista.next()) {
-                            usuarioBD = lista.getString("NomUsu");
-                            contrasenaBD = lista.getString("PassUsu");
-                            if (sesion.getAttribute("usuario").equals(usuarioBD) && MessageDigest.isEqual(hash.getBytes(), contrasenaBD.getBytes())) {
-                              break;
-                            }
-                          }
-                          if (sesion.getAttribute("usuario").equals(usuarioBD) && MessageDigest.isEqual(hash.getBytes(), contrasenaBD.getBytes())) {
+                          if (sesion.isNew()) {%>
+                        <div class="d-flex justify-content-center mt-3 login_container">                   
+                            <button type="button" name="button" class="btn login_btn"><a class ="link" href="iniciosesion.jsp">Iniciar Sesion</a></button>
+                        </div>
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-center links">
+                                ¿No tienes cuenta? <a href="registro.jsp" class="ml-2">Registrate</a>
+                            </div>
+                            <%
+                            } else {
+
+                              if (!sesion.isNew()) {
+                                usuario = request.getParameter("usuario");
+                                contrasena = request.getParameter("contrasena");
+                              }
+                              sesion.setAttribute("usuario", usuario);
+                              sesion.setAttribute("contrasena", contrasena);
+                              String query = "SELECT * FROM usuarios";
+                              MessageDigest md = MessageDigest.getInstance("MD5");
+                              md.update(contrasena.getBytes());
+                              String hash = DatatypeConverter.printHexBinary(md.digest());
+                              ResultSet lista = s.executeQuery(query);
+                              while (lista.next()) {
+                                usuarioBD = lista.getString("NomUsu");
+                                contrasenaBD = lista.getString("PassUsu");
+                                if (sesion.getAttribute("usuario").equals(usuarioBD) && MessageDigest.isEqual(hash.getBytes(), contrasenaBD.getBytes())) {
+                                  break;
+                                }
+                              }
+                              if (sesion.getAttribute("usuario").equals(usuarioBD) && MessageDigest.isEqual(hash.getBytes(), contrasenaBD.getBytes())) {
+                            %>
+
+
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="button" name="button" class="btn login_btn"><a class ="link" href="padres.jsp">Padres</a></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="button" name="button" class="btn login_btn"><a class ="link" href="crias.jsp">Crias</a></button>
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="button" name="button" class="btn login_btn"><a class ="link" href="cerrarsesion.jsp">Cerrar Sesion</a></button>
+                            </div>
+                        </div>
+
+                        <%
+                        } else {
                         %>
-
-
-                        <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="button" name="button" class="btn login_btn"><a class ="link" href="padres.jsp">Padres</a></button>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="button" name="button" class="btn login_btn"><a class ="link" href="crias.jsp">Crias</a></button>
-                        </div>
-
-                        <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="button" name="button" class="btn login_btn"><a class ="link" href="cerrarsesion.jsp">Cerrar Sesion</a></button>
-                        </div>
-                    </div>
-
-                    <%
-                    } else {
-                    %>
-                    <br>
-                    <% if (sesion.isNew()) {%>
-                    <div class="d-flex justify-content-center mt-3 login_container">                   
-                        <button type="button" name="button" class="btn login_btn"><a class ="link" href="iniciosesion.jsp">Iniciar Sesion</a></button>
-                    </div>
-                    <%
-            } else {
-            %>
-            <div class="d-flex justify-content-center links">
-                           <p class="text-danger">Contraseña o usuario incorrectos</p>
-                        </div>
-            <div class="d-flex justify-content-center mt-3 login_container">
-                        <button type="button" name="button" class="btn login_btn"><a class ="link" href="iniciosesion.jsp">Iniciar Sesion</a></button>
-                    </div>
-
-                    <%
-                        }
-                      }
-                    %>
-                    <div class="mt-4">
                         <div class="d-flex justify-content-center links">
-                            ¿No tienes cuenta? <a href="registro.jsp" class="ml-2">Registrate</a>
+                            <p class="text-danger">Contraseña o usuario incorrectos</p>
                         </div>
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <button type="button" name="button" class="btn login_btn"><a class ="link" href="iniciosesion.jsp">Iniciar Sesion</a></button>
+                        </div>
+                        <% }
+                          }%>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>    
-</body>
+        </div>    
+    </body>
 </html>
