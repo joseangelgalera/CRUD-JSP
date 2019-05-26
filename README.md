@@ -56,7 +56,7 @@ Es tan facil como darle al boton verde de Añadir padres.<br>
 
 ### Actualizar padres
 Dandole al icono del boligrafo amarillo se pueden editar las parejas de padres.<br>
-*actuañizarpadres.jsp*
+*actualizarpadres.jsp*
 <img src="Capturas/img11.png" alt="Actualizar padres">
 <br>
 
@@ -79,7 +79,7 @@ En esta tabla se guardan las crias de los padres anteriormente registrados, aña
 
 ### Añadir crías
 Usa el mismo boton que la tabla padres y ademas se pide el numero de anilla de los padres mediante una lista desplegable en la que aparecen las anillas ya registradas.<br>
-*añadircrias.jsp*
+*anadircrias.jsp*
 <img src="Capturas/img16.png" alt="Añadir crías">
 <br>
 
