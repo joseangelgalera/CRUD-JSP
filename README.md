@@ -58,23 +58,44 @@ Es tan facil como darle al boton verde de Añadir padres.<br>
 Dandole al icono del boligrafo amarillo se pueden editar las parejas de padres.<br>
 *actuañizarpadres.jsp*
 <img src="Capturas/img11.png" alt="Actualizar padres">
-<img src="Capturas/img12.png" alt="Padres actualizados">
 <br>
 
 ### Filtrar padres
 Mediante un campo de busqueda se pueden filtrar las parejas de padres por sus distintos campos.
-<img src="Capturas/img13.png" alt="Filtrado de datos">
+<img src="Capturas/img12.png" alt="Filtrado de datos">
 
 ### Borrar padres
 Haciendo click sobre el icono de la papelera roja se pueden borrar los padres.<br>
 *borrarpadres.jsp*
-<img src="Capturas/img14.png" alt="Borrar padres">
-<img src="Capturas/img15.png" alt="Padres borrados">
+<img src="Capturas/img13.png" alt="Borrar padres">
+<img src="Capturas/img14.png" alt="Padres borrados">
 <br>
 
 ## Tabla crías
+En esta tabla se guardan las crias de los padres anteriormente registrados, añadiendo los siguientes datos: su numero de anilla, el color, el sexo, si nacio, murio, fue apartado o vendido y el numero de anilla de los padres.<br>
+*crias.jsp*
+<img src="Capturas/img15.png" alt="Tabla crías">
+<br>
 
+### Añadir crías
+Usa el mismo boton que la tabla padres y ademas se pide el numero de anilla de los padres mediante una lista desplegable en la que aparecen las anillas ya registradas.<br>
+*añadircrias.jsp*
+<img src="Capturas/img16.png" alt="Añadir crías">
+<br>
 
+### Actualizar crías
+*actualizarcrias.jsp*
+<img src="Capturas/img17.png" alt="Actualizar crías">
+<br>
+
+### Filtrar crías
+Al igual que los padres se pueden filtrar las crías por campos mediante un campo de busqueda.
+<img src="Capturas/img18.png" alt="Filtrar crías">
+<br>
+
+### Borrar crías
+*borrarcrias.jsp*
+<img src="Capturas/img19.png" alt="Borrar crías">
 
 
 
