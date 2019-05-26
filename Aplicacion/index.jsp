@@ -87,12 +87,15 @@
                     %>
                     <br>
                     <% if (sesion.isNew()) {%>
-                    <div class="d-flex justify-content-center mt-3 login_container">
+                    <div class="d-flex justify-content-center mt-3 login_container">                   
                         <button type="button" name="button" class="btn login_btn"><a class ="link" href="iniciosesion.jsp">Iniciar Sesion</a></button>
                     </div>
                     <%
             } else {
             %>
+            <div class="d-flex justify-content-center links">
+                           <p class="text-danger">Contraseña o usuario incorrectos</p>
+                        </div>
             <div class="d-flex justify-content-center mt-3 login_container">
                         <button type="button" name="button" class="btn login_btn"><a class ="link" href="iniciosesion.jsp">Iniciar Sesion</a></button>
                     </div>
