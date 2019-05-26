@@ -33,20 +33,50 @@ Se pide al usuario el nombre y la contraseña y tambien acceso al link de regist
 <img src="Capturas/img5.png" alt="Pagina de incio de sesión">
 Si se introducen mal los datos saldra un mensaje de error y se podra volver a intentar.
 <img src="Capturas/img6.png" alt="Error de incio de sesión">
+<br>
 
 ##Menú principal
 Una vez hecho correctamente el incio de sesión se nos presenta un menu que nos da acceso a la tabla Padres, Crías y al cierre de sesión.
+Ademas cada una de las tablas cuenta con un botón volver que devuelve al usuario al menú principal.
 <img src="Capturas/img7.png" alt="Menú principal">
 Cualquier intento de acceder a las tablas sin haber iniciado sesión anteriormente redirigira a la pagina de inicio de sesión.
 
 ## Tabla padres
-En ella se guarda: el numero de anilla de los padres, el año de nacimiento y la raza.<br>
+En ella se guardan las distintas parejas de padres: el numero de anilla de los padres, el año de nacimiento y la raza.<br>
 *padres.jsp*
 <img src="Capturas/img8.png" alt="Tabla padres">
 <br>
+
 ### Añadir padres
+Es tan facil como darle al boton verde de Añadir padres.<br>
+*anadirpadres.jsp*
 <img src="Capturas/img9.png" alt="Añadir padres">
 <img src="Capturas/img10.png" alt="Nuevos padres añadidos">
+<br>
+
+### Actualizar padres
+Dandole al icono del boligrafo amarillo se pueden editar las parejas de padres.<br>
+*actuañizarpadres.jsp*
+<img src="Capturas/img11.png" alt="Actualizar padres">
+<img src="Capturas/img12.png" alt="Padres actualizados">
+<br>
+
+### Filtrar padres
+Mediante un campo de busqueda se pueden filtrar las parejas de padres por sus distintos campos.
+<img src="Capturas/img13.png" alt="Filtrado de datos">
+
+### Borrar padres
+Haciendo click sobre el icono de la papelera roja se pueden borrar los padres.<br>
+*borrarpadres.jsp*
+<img src="Capturas/img14.png" alt="Borrar padres">
+<img src="Capturas/img15.png" alt="Padres borrados">
+<br>
+
+## Tabla crías
+
+
+
+
 
 
 
