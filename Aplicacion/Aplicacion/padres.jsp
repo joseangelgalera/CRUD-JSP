@@ -99,7 +99,7 @@
                                         <div class="modal-content">
                                             <form action="actualizarpadres.jsp" method="post">
                                                 <div class="modal-header">						
-                                                    <h4 class="modal-title">Editar cria</h4>
+                                                    <h4 class="modal-title">Editar padres</h4>
                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                                 </div>
                                                 <div class="modal-body">
@@ -137,7 +137,7 @@
                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                                 </div>
                                                 <div class="modal-body">					
-                                                    <p>¿Seguro que quieres borrar esta cria?</p>
+                                                    <p>¿Seguro que quieres borrar estos padres?</p>
                                                     <p><%= listado.getString("NumAnillPad")%></p>
                                                     <input type="hidden" name="borrarPadres" value="<%= listado.getString("CodPad")%>">
                                                     <p class="text-warning"><small>Una vez hecho no podrá recuperarse.</small></p>
@@ -177,7 +177,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Raza</label>
-                                <input type="text" class="form-control" name="Raza">
+                                <input type="text" class="form-control" name="Raza" required>
                             </div>
                             <div class="form-group">
                                 <label>Año de nacimiento</label>

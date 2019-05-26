@@ -184,7 +184,7 @@
                                                     <input type="hidden" name="actualizarCria" value="<%= listado.getString("CodNid")%>">
                                                     <div class="form-group">
                                                         <label>Nº Anilla</label>
-                                                        <input type="text" class="form-control" name="NumAnill" placeholder="<%= listado.getString("NumAnill")%>" required>
+                                                        <input type="text" class="form-control" name="NumAnill" maxlength="10" placeholder="<%= listado.getString("NumAnill")%>" required>
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Color</label>
@@ -192,7 +192,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Sexo</label>
-                                                        <input type="text" class="form-control" name="Sexo" placeholder="<%= listado.getString("Sexo")%>">
+                                                        <input type="text" class="form-control" name="Sexo" placeholder="<%= listado.getString("Sexo")%>" required>
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Nacio</label>
