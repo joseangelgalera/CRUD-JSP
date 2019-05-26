@@ -96,6 +96,7 @@ Al igual que los padres se pueden filtrar las crías por campos mediante un camp
 ### Borrar crías
 *borrarcrias.jsp*
 <img src="Capturas/img19.png" alt="Borrar crías">
+<img src="Capturas/img20.png" alt="Crías borradas">
 
 
 
