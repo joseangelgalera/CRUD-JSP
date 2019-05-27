@@ -22,11 +22,13 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
   7.3 [Filtrar crías](#id7.3)
   7.4 [Borrar crías](#id7.4)
 
-## 1. Base de datos utilizada<a name="id1"></a>
+<a name="id1"></a>
+## 1. Base de datos utilizada
 <img src="Capturas/basededatos.png" alt="Base de datos">
 <br>
 
-## 2. Página principal<a name="id2"></a>
+<a name="id2"></a>
+## 2. Página principal
 En ella podemos ver el botón de inicio de sesión y un link para iniciar el registro de un nuevo usuario.<br>
 *index.jsp*
 <img src="Capturas/img1.png" alt="Inicio">
