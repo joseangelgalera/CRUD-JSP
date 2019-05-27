@@ -25,8 +25,9 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 <br>
 
 <a name="id1"></a>
-## 1. Base de datos utilizada [(Volver al índice)](#id0)
+## 1. Base de datos utilizada  
 <img src="Capturas/basededatos.png" alt="Base de datos">
+[(Volver al índice)](#id0)
 <br>
 
 <a name="id2"></a>
