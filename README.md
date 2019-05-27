@@ -24,18 +24,18 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 <br>
 
 <a name="id1"></a>
-## 1. Base de datos utilizada 
+## 1. Base de datos utilizada :file_folder:
 <img src="Capturas/basededatos.png" alt="Base de datos">  
 
 <a name="id2"></a>
-## 2. Página principal 
+## 2. Página principal :globe_with_meridians:
 En ella podemos ver el botón de inicio de sesión y un link para iniciar el registro de un nuevo usuario.  
 *index.jsp*  
 
 <img src="Capturas/img1.png" alt="Inicio">  
 
 <a name="id3"></a>
-## 3. Registro de nuevo usuario 
+## 3. Registro de nuevo usuario :black_nib:
 Consta de un formulario que pide nombre de usuario, contraseña y repetir dicha contraseña.  
 *registro.jsp*  
 
@@ -53,7 +53,7 @@ Si se completa de forma adecuada el registro se presentara un mensaje que lo con
 
 
 <a name="id4"></a>
-## 4. Inicio de sesión 
+## 4. Inicio de sesión :memo:
 Se pide al usuario el nombre y la contraseña y también acceso al link de registro.  
 *iniciodesesion.jsp*  
 
@@ -65,7 +65,7 @@ Si se introducen mal los datos saldrá un mensaje de error y se podrá volver a 
 
 
 <a name="id5"></a>
-## 5. Menú principal 
+## 5. Menú principal :computer:
 Una vez hecho correctamente el inicio de sesión se nos presenta un menú que nos da acceso a la tabla Padres, Crías y al cierre de sesión.  
 Además cada una de las tablas cuenta con un botón volver que devuelve al usuario al menú principal.  
 
