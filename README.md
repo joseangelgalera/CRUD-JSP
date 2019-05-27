@@ -12,15 +12,16 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 4. [Inicio de sesión](#id4)
 5. [Menú principal](#id5)
 6. [Tabla padres](#id6)
-    * [Añadir padres](#id6.1)
-    * [Actualizar padres](#id6.2)
-    * [Filtrar padres](#id6.3)
-    * [Borrar padres](#id6.4)
+    * 6.1 [Añadir padres](#id6.1)
+    * 6.2 [Actualizar padres](#id6.2)
+    * 6.3 [Filtrar padres](#id6.3)
+    * 6.4 [Borrar padres](#id6.4)
 7. [Tabla crías](#id7)
     * 7.1 [Añadir crías](#id7.1)
     * 7.2 [Actualizar crías](#id7.2)
     * 7.3 [Filtrar crías](#id7.3)
     * 7.4 [Borrar crías](#id7.4)
+<br>
 
 <a name="id1"></a>
 ## 1. Base de datos utilizada
