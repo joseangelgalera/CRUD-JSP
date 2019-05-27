@@ -25,6 +25,8 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 
 <a name="id1"></a>
 ## 1. Base de datos utilizada :file_folder:
+Se ha creado mediante MySQL y se ha administrado con phpMyAdmin.  
+
 <img src="Capturas/basededatos.png" alt="Base de datos">  
 
 <a name="id2"></a>
