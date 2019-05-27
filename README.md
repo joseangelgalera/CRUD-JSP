@@ -11,7 +11,7 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 3. [Registro de nuevo usuario](#id3)
 4. [Inicio de sesión](#id4)
 5. [Menú principal](#id5)
-* 6. [Tabla padres](#id6)
+6. [Tabla padres](#id6)
  * 6.1 [Añadir padres](#id6.1)
  *  6.2 [Actualizar padres](#id6.2)
  * 6.3 [Filtrar padres](#id6.3)
