@@ -40,9 +40,11 @@ En ella podemos ver el botón de inicio de sesión y un link para iniciar el reg
 Consta de un formulario que pide nombre de usuario, contraseña y repetir dicha contraseña.<br>
 *registro.jsp*
 <img src="Capturas/img2.png" alt="Registro">
+<br>
 En caso de que se introduzcan mal los datos se puede volver a intentar o volver a la pagina de inicio de sesión.
 *validaregistro.jsp*
 <img src="Capturas/img3.png" alt="Fallo de registro">
+<br>
 Si se completa de forma adecuada el registro se presentara un mensaje que lo confirme y se podra volver a la página de incio de sesión.<br>
 *validaregistro.jsp*
 <img src="Capturas/img4.png" alt="Registro completado correctamente">
@@ -53,6 +55,7 @@ Si se completa de forma adecuada el registro se presentara un mensaje que lo con
 Se pide al usuario el nombre y la contraseña y tambien acceso al link de registro.<br>
 *iniciodesesion.jsp*
 <img src="Capturas/img5.png" alt="Pagina de incio de sesión">
+<br>
 Si se introducen mal los datos saldra un mensaje de error y se podra volver a intentar.
 <img src="Capturas/img6.png" alt="Error de incio de sesión">
 <br>
@@ -62,6 +65,7 @@ Si se introducen mal los datos saldra un mensaje de error y se podra volver a in
 Una vez hecho correctamente el incio de sesión se nos presenta un menu que nos da acceso a la tabla Padres, Crías y al cierre de sesión.
 Ademas cada una de las tablas cuenta con un botón volver que devuelve al usuario al menú principal.
 <img src="Capturas/img7.png" alt="Menú principal">
+<br>
 Cualquier intento de acceder a las tablas sin haber iniciado sesión anteriormente redirigira a la pagina de inicio de sesión.
 <br>
 
@@ -77,6 +81,7 @@ En ella se guardan las distintas parejas de padres: el numero de anilla de los p
 Es tan facil como darle al boton verde de Añadir padres.<br>
 *anadirpadres.jsp*
 <img src="Capturas/img9.png" alt="Añadir padres">
+<br>
 <img src="Capturas/img10.png" alt="Nuevos padres añadidos">
 <br>
 
@@ -91,12 +96,14 @@ Dandole al icono del boligrafo amarillo se pueden editar las parejas de padres.<
 ### 6.3 Filtrar padres 
 Mediante un campo de busqueda se pueden filtrar las parejas de padres por sus distintos campos.
 <img src="Capturas/img12.png" alt="Filtrado de datos">
+<br>
 
 <a name="id6.4"></a>
 ### 6.4 Borrar padres 
 Haciendo click sobre el icono de la papelera roja se pueden borrar los padres.<br>
 *borrarpadres.jsp*
 <img src="Capturas/img13.png" alt="Borrar padres">
+<br>
 <img src="Capturas/img14.png" alt="Padres borrados">
 <br>
 
@@ -130,6 +137,7 @@ Al igual que los padres se pueden filtrar las crías por campos mediante un camp
 ### 7.4 Borrar crías 
 *borrarcrias.jsp*
 <img src="Capturas/img19.png" alt="Borrar crías">
+<br>
 <img src="Capturas/img20.png" alt="Crías borradas">
 
 
