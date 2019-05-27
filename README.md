@@ -1,4 +1,4 @@
-# Cría de pájaros :hatching_chick:
+# Gestión de cría de aves :hatching_chick:
 
 El proyecto tratará sobre la gestión de cría de aves en la que se hará el registro de las parejas usadas y las crías nacidas.
 
