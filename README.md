@@ -31,8 +31,7 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
 <a name="id2"></a>
 ## 2. Página principal 
 En ella podemos ver el botón de inicio de sesión y un link para iniciar el registro de un nuevo usuario.<br>
-*index.jsp*
-<br>
+*index.jsp*<br />
 <img src="Capturas/img1.png" alt="Inicio">
 <br><br>
 
