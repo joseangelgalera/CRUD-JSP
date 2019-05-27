@@ -17,10 +17,10 @@ que a día de hoy algunos siguen usando libretas para llevar el seguimiento de l
  * 6.3 [Filtrar padres](#id6.3)
  * 6.4 [Borrar padres](#id6.4)
 7. [Tabla crías](#id7)
-  7.1 [Añadir crías](#id7.1)
-  7.2 [Actualizar crías](#id7.2)
-  7.3 [Filtrar crías](#id7.3)
-  7.4 [Borrar crías](#id7.4)
+ * 7.1 [Añadir crías](#id7.1)
+ * 7.2 [Actualizar crías](#id7.2)
+ * 7.3 [Filtrar crías](#id7.3)
+ * 7.4 [Borrar crías](#id7.4)
 
 <a name="id1"></a>
 ## 1. Base de datos utilizada
