@@ -59,7 +59,8 @@ Se pide al usuario el nombre y la contraseña y tambien acceso al link de regist
 
 <img src="Capturas/img5.png" alt="Pagina de incio de sesión">  
 
-Si se introducen mal los datos saldra un mensaje de error y se podra volver a intentar.  
+Si se introducen mal los datos saldra un mensaje de error y se podra volver a intentar. 
+
 <img src="Capturas/img6.png" alt="Error de incio de sesión">  
 
 
