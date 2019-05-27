@@ -1,6 +1,6 @@
-# Cría de pajaros :hatching_chick:
+# Cría de pájaros :hatching_chick:
 
-El proyecto tratara sobre la gestión de cría de aves en la que se hará el registro de las parejas usadas y las crias nacidas.
+El proyecto tratará sobre la gestión de cría de aves en la que se hará el registro de las parejas usadas y las crías nacidas.
 
 El objetivo de este proyecto es informatizar la recogida de estos datos para facilitar el acceso a los ornitólogos ya
 que a día de hoy algunos siguen usando libretas para llevar el seguimiento de la cría.
@@ -59,30 +59,30 @@ Se pide al usuario el nombre y la contraseña y tambien acceso al link de regist
 
 <img src="Capturas/img5.png" alt="Pagina de incio de sesión">  
 
-Si se introducen mal los datos saldra un mensaje de error y se podra volver a intentar. 
+Si se introducen mal los datos saldrá un mensaje de error y se podra volver a intentar. 
 
 <img src="Capturas/img6.png" alt="Error de incio de sesión">  
 
 
 <a name="id5"></a>
 ## 5. Menú principal 
-Una vez hecho correctamente el incio de sesión se nos presenta un menu que nos da acceso a la tabla Padres, Crías y al cierre de sesión.
-Ademas cada una de las tablas cuenta con un botón volver que devuelve al usuario al menú principal.  
+Una vez hecho correctamente el inicio de sesión se nos presenta un menú que nos da acceso a la tabla Padres, Crías y al cierre de sesión.  
+Además cada una de las tablas cuenta con un botón volver que devuelve al usuario al menú principal.  
 
 <img src="Capturas/img7.png" alt="Menú principal">  
 
-Cualquier intento de acceder a las tablas sin haber iniciado sesión anteriormente redirigira a la pagina de inicio de sesión.  
+Cualquier intento de acceder a las tablas sin haber iniciado sesión anteriormente redirigirá a la pagina de inicio de sesión.  
 
 <a name="id6"></a>
 ## 6. Tabla padres 
-En ella se guardan las distintas parejas de padres: el numero de anilla de los padres, el año de nacimiento y la raza.  
+En ella se guardan las distintas parejas de padres: el número de anilla de los padres, el año de nacimiento y la raza.  
 *padres.jsp*  
 
 <img src="Capturas/img8.png" alt="Tabla padres">  
 
 <a name="id6.1"></a>
 ### 6.1 Añadir padres
-Es tan facil como darle al boton verde de Añadir padres.  
+Es tan fácil como darle al botón verde de Añadir padres.  
 *anadirpadres.jsp*  
 
 <img src="Capturas/img9.png" alt="Añadir padres">  
@@ -91,14 +91,14 @@ Es tan facil como darle al boton verde de Añadir padres.
 
 <a name="id6.2"></a>
 ### 6.2 Actualizar padres 
-Dandole al icono del boligrafo amarillo se pueden editar las parejas de padres.  
+Dándole al icono del bolígrafo amarillo se pueden editar las parejas de padres.  
 *actualizarpadres.jsp*  
 
 <img src="Capturas/img11.png" alt="Actualizar padres">  
 
 <a name="id6.3"></a>
 ### 6.3 Filtrar padres 
-Mediante un campo de busqueda se pueden filtrar las parejas de padres por sus distintos campos.  
+Mediante un campo de búsqueda se pueden filtrar las parejas de padres por sus distintos campos.  
 
 <img src="Capturas/img12.png" alt="Filtrado de datos">  
 
@@ -113,14 +113,14 @@ Haciendo click sobre el icono de la papelera roja se pueden borrar los padres.
 
 <a name="id7"></a>
 ## 7. Tabla crías 
-En esta tabla se guardan las crias de los padres anteriormente registrados, añadiendo los siguientes datos: su numero de anilla, el color, el sexo, si nacio, murio, fue apartado o vendido y el numero de anilla de los padres.  
+En esta tabla se guardan las crías de los padres anteriormente registrados, añadiendo los siguientes datos: su número de anilla, el color, el sexo, si nació, murió, fue apartado o vendido y el número de anilla de los padres.  
 *crias.jsp*  
 
 <img src="Capturas/img15.png" alt="Tabla crías">  
 
 <a name="id7.1"></a>
 ### 7.1 Añadir crías 
-Usa el mismo boton que la tabla padres y ademas se pide el numero de anilla de los padres mediante una lista desplegable en la que aparecen las anillas ya registradas.  
+Usa el mismo botón que la tabla padres y además se pide el número de anilla de los padres mediante una lista desplegable en la que aparecen las anillas ya registradas.  
 *anadircrias.jsp*  
 
 <img src="Capturas/img16.png" alt="Añadir crías">  
@@ -133,7 +133,7 @@ Usa el mismo boton que la tabla padres y ademas se pide el numero de anilla de l
 
 <a name="id7.3"></a>
 ### 7.3 Filtrar crías 
-Al igual que los padres se pueden filtrar las crías por campos mediante un campo de busqueda.  
+Al igual que los padres se pueden filtrar las crías por campos mediante un campo de búsqueda.  
 
 <img src="Capturas/img18.png" alt="Filtrar crías">  
 
