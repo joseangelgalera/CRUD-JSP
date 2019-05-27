@@ -114,7 +114,7 @@ Haciendo click sobre el icono de la papelera roja se pueden borrar los padres.
 <img src="Capturas/img14.png" alt="Padres borrados">  
 
 <a name="id7"></a>
-## 7. Tabla crías :yellow_bird:
+## 7. Tabla crías :hatched_chick:
 En esta tabla se guardan las crías de los padres anteriormente registrados, añadiendo los siguientes datos: su número de anilla, el color, el sexo, si nació, murió, fue apartado o vendido y el número de anilla de los padres.  
 *crias.jsp*  
 
