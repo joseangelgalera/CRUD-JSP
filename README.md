@@ -73,7 +73,7 @@ En ella se guardan las distintas parejas de padres: el numero de anilla de los p
 <br>
 
 <a name="id6.1"></a>
-### 6.1 Añadir padres 
+## 6.1 Añadir padres ## 
 Es tan facil como darle al boton verde de Añadir padres.<br>
 *anadirpadres.jsp*
 <img src="Capturas/img9.png" alt="Añadir padres">
