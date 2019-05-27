@@ -41,12 +41,12 @@ Consta de un formulario que pide nombre de usuario, contraseña y repetir dicha 
 
 <img src="Capturas/img2.png" alt="Registro">  
 
-En caso de que se introduzcan mal los datos se puede volver a intentar o volver a la pagina de inicio de sesión.  
+En caso de que se introduzcan mal los datos se puede volver a intentar o volver a la página de inicio de sesión.  
 *validaregistro.jsp*  
 
 <img src="Capturas/img3.png" alt="Fallo de registro">  
 
-Si se completa de forma adecuada el registro se presentara un mensaje que lo confirme y se podra volver a la página de incio de sesión. 
+Si se completa de forma adecuada el registro se presentara un mensaje que lo confirme y se podrá volver a la página de incio de sesión. 
 *validaregistro.jsp*  
 
 <img src="Capturas/img4.png" alt="Registro completado correctamente">  
@@ -54,12 +54,12 @@ Si se completa de forma adecuada el registro se presentara un mensaje que lo con
 
 <a name="id4"></a>
 ## 4. Inicio de sesión 
-Se pide al usuario el nombre y la contraseña y tambien acceso al link de registro.  
+Se pide al usuario el nombre y la contraseña y también acceso al link de registro.  
 *iniciodesesion.jsp*  
 
 <img src="Capturas/img5.png" alt="Pagina de incio de sesión">  
 
-Si se introducen mal los datos saldrá un mensaje de error y se podra volver a intentar. 
+Si se introducen mal los datos saldrá un mensaje de error y se podrá volver a intentar. 
 
 <img src="Capturas/img6.png" alt="Error de incio de sesión">  
 
@@ -71,7 +71,7 @@ Además cada una de las tablas cuenta con un botón volver que devuelve al usuar
 
 <img src="Capturas/img7.png" alt="Menú principal">  
 
-Cualquier intento de acceder a las tablas sin haber iniciado sesión anteriormente redirigirá a la pagina de inicio de sesión.  
+Cualquier intento de acceder a las tablas sin haber iniciado sesión anteriormente redirigirá a la página de inicio de sesión.  
 
 <a name="id6"></a>
 ## 6. Tabla padres 
