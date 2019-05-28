@@ -117,8 +117,8 @@
                                             <input type="text" class="form-control" name="Vendido" required>
                                         </div>
                                         <div class="form-group">
-                                            <label>Nº Anilla de los padres</label>
-                                            <select name="NumAnillPad">
+                                            <label>Escoge el nº de anilla de los padres</label>
+                                            <select class="form-control" name="NumAnillPad">
                                                 <%
                                                   while (listadoPadreAnadir.next()) {
                                                 %>
@@ -211,8 +211,8 @@
                                                         <input type="text" class="form-control" name="Vendido" placeholder="<%= listado.getString("Vendido")%>" required>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label>Nº Anilla de los padres</label>
-                                                        <select name="NumAnillPad">
+                                                        <label>Escoge el nº de anilla de los padres</label>
+                                                        <select class="form-control" name="NumAnillPad">
                                                             <%
                                                               while (listadoPadre.next()) {
                                                             %>
